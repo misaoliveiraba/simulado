@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado de Língua Portuguesa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simulado de Língua Portuguesa</h1>
+            <p>Escolha um assunto abaixo para começar.</p>
+        </header>
+
+        <main id="topics-container">
+            </main>
+
+        <div id="quiz-container" class="quiz-container hidden">
+            <h2 id="quiz-title"></h2>
+            <div id="question-area">
+                <p id="question-text"></p>
+                <div id="options-container" class="options-container">
+                    </div>
+            </div>
+            <div id="feedback-area" class="feedback-area"></div>
+            <button id="submit-btn">Enviar Resposta</button>
+            <button id="next-btn" class="hidden">Próxima Questão</button>
+        </div>
+
+        <div id="results-container" class="results-container hidden">
+            <h2>Resultado Final</h2>
+            <p>Você acertou <span id="score"></span> de 10 questões.</p>
+            <p id="result-message"></p>
+            <button id="restart-btn">Voltar ao Início</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -9,17 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const questions = {
-        document.addEventListener('DOMContentLoaded', () => {
-    const topics = [
-        "Compreensão e interpretação de texto", "Tipologia e gêneros textuais", "Figuras de linguagem",
-        "Significação de palavras e expressões", "Relações de sinonímia e de antonímia", "Ortografia",
-        "Acentuação gráfica", "Uso da crase", "Fonética e Fonologia", "Morfologia", "Locuções verbais",
-        "Funções do 'que' e do 'se'", "Formação de palavras", "Elementos de comunicação", "Sintaxe",
-        "Concordância verbal e nominal", "Regência verbal e nominal", "Colocação pronominal",
-        "Emprego dos sinais de pontuação", "Elementos de coesão", "Função textual dos vocábulos", "Variação linguística"
-    ];
-
-    const questions = {
         0: [ // Compreensão e interpretação de texto
             { question: "Inferir uma informação significa:", options: ["Identificar o que está escrito no texto.", "Concluir algo a partir de pistas do texto.", "Resumir a ideia principal.", "Encontrar um sinônimo para uma palavra."], answer: "Concluir algo a partir de pistas do texto." },
             { question: "A ideia principal de um parágrafo é chamada de:", options: ["Argumento secundário", "Exemplo", "Tópico frasal", "Conclusão"], answer: "Tópico frasal" },
@@ -447,12 +436,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     init();
-});
-        // ... E assim por diante para todos os 22 tópicos.
-        // O código completo é muito extenso para colar aqui, então vou continuar a lógica como se estivesse completo.
-        // O código Javascript abaixo é a versão completa e funcional com todas as questões.
-    };
-
-    // (O restante do código JavaScript permanece o mesmo)
-    // ...
 });

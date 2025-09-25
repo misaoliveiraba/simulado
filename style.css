@@ -4,7 +4,7 @@
     --primary-color: #007BFF;
     --primary-darker: #0056b3;
     --secondary-color: #f4f4f4;
-    --text-color: #333;
+    --text-color: #333; /* Cor escura para o texto padrão */
     --correct-color: #28a745;
     --incorrect-color: #dc3545;
     --white: #fff;
@@ -20,7 +20,7 @@ body {
     padding: 20px;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alterado para alinhar no topo */
+    align-items: flex-start;
     min-height: 100vh;
 }
 
@@ -32,7 +32,7 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
     box-sizing: border-box;
-    margin-top: 20px; /* Adiciona margem no topo */
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -50,7 +50,7 @@ header h1 {
 
 .accordion-btn {
     background-color: var(--white);
-    color: var(--text-color);
+    color: var(--text-color); /* Garante que o texto do accordion seja escuro */
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -87,22 +87,6 @@ header h1 {
     transition: max-height 0.3s ease-out;
 }
 
-.start-quiz-btn {
-    background-color: var(--primary-color);
-    color: var(--white);
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-    margin: 15px 0;
-}
-
-.start-quiz-btn:hover {
-    background-color: var(--primary-darker);
-}
-
 .quiz-container, .results-container {
     padding: 20px;
     border: 1px solid var(--border-color);
@@ -116,6 +100,7 @@ header h1 {
     margin-bottom: 20px;
 }
 
+/* ------------------- ÁREA DA CORREÇÃO ------------------- */
 .options-container .option {
     display: block;
     width: 100%;
@@ -128,6 +113,7 @@ header h1 {
     text-align: left;
     font-size: 16px;
     transition: all 0.2s;
+    color: var(--text-color); /* <<< ESSA LINHA CORRIGE O PROBLEMA */
 }
 
 .options-container .option:hover {
@@ -135,13 +121,14 @@ header h1 {
     border-color: #b0b0b0;
 }
 
-/* Alteração para melhor visibilidade da opção selecionada */
 .options-container .option.selected {
     background-color: var(--primary-darker);
-    color: var(--white);
+    color: var(--white); /* Texto branco apenas na opção selecionada (fundo escuro) */
     border-color: var(--primary-color);
     font-weight: 500;
 }
+/* ----------------- FIM DA ÁREA DA CORREÇÃO ----------------- */
+
 
 .feedback-area {
     margin-top: 15px;
@@ -160,6 +147,7 @@ header h1 {
     font-weight: bold;
 }
 
+/* Estilo para botões principais (Enviar, Próxima, etc.) */
 button {
     background-color: var(--primary-color);
     color: var(--white);
